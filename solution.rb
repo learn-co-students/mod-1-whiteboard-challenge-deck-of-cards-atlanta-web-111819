@@ -20,7 +20,7 @@ class Deck
         
 
     def choose_card
-        self.cards.delete_at(rand(51))
+        return self.cards.delete_at(rand(self.cards.length))
     end
 
 end
@@ -35,5 +35,7 @@ class Card
     end
 
 end
+
+binding.pry
 
 
